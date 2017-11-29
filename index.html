@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+pre { color:white;border:dashed 1px white;}
+body
+{
+	background-color:#777777;
+}
+p
+{
+	font-family:"Times New Roman";
+	font-size:30px;
+       text-align:center;
+}
+ .header{  
+                padding: 10px 0;  
+    
+              color:black;
+	text-align:center;
+        font-family:"Lucida Console";
+        font-size:50px 
+            }  
+.sidebar{  
+                float: left;
+                width: 150px;  
+                background: #FFFAF0;  
+            }  
+
+.content {
+position:relative;
+width:auto;
+min-width:120px;
+margin:0px 210px 20px 170px;
+border:1px solid black;
+padding:10px;
+z-index:3;} 
+a:link { 
+color:#DCDCDC;
+text-decoration:underline; 
+} 
+a:visited { 
+color:	#DCDCDC; 
+text-decoration:none; 
+} 
+a:hover { 
+color:#000000; 
+text-decoration:none; 
+} 
+a:active { 
+color:#DCDCDC; 
+text-decoration:none; 
+} 
+</style>
+
+</head>
+<body>
+   <div class="header">  
+                <h1>TEACH U WEB</h1>  
+   </div>  
+ <div class="sidebar">  
+                   <a href="https://megurokawa.github.io/teachuweb/" target="_blank"><p>TEACH U WEB</p></a>
+                     <a href="https://megurokawa.github.io/html/" target="_blank"><p>HTML</p></a> 
+                    <a href="https://megurokawa.github.io/html5/" target="_blank"><p>HTML5</p></a>
+                    <a href="https://megurokawa.github.io/xhtml/" target="_blank"><p>XHTML</p></a>
+                    <a href="https://megurokawa.github.io/css/" target="_blank"><p>CSS</p></a>
+   </div>
+<div class="content">
+<h2> CSS Basic Syntax</h2>
+<hr>
+<h3>CSS Syntax</h3>
+<h4>The CSS rule consists of two main parts: the selector, and one or more statements.</h4>
+<pre>selector {declaration1; declaration2; ... declarationN }</pre>
+<h4>The selector is usually the HTML element that you need to change the style.</h4>
+<h4>Each statement consists of a property and a value.</h4>
+<h4>Property is the Style Attribute that you want to set.Each property has a value.Attributes and values are separated by a colon.<h4>
+<pre>selector {property: value}</pre>
+<h4>The purpose of this line of the code below is to define the text color in the h1 element as red while setting the font size to 14 pixels.</h4>
+<h4>In this example, h1 is the selector, color and font-size are the attributes, and red and 14px are the values.<h4>
+<pre>h1 {color:red; font-size:14px;}</pre>
+<hr>
+<h3>Different Wording and Unit of Value</h3>
+<h4>In addition to the word RED, we can also use the hexadecimal color value # ff0000:</h4>
+<pre>p { color: <code>#ff0000</code>; }</pre>
+<h4>To save bytes, we can use the abbreviation of CSS:</h4>
+<pre>p { color: <code>#f00</code>; }</pre>
+<h4>We can also use RGB values in two methods:</h4>
+<pre>p { color: <code>rgb(255,0,0)</code>; }
+p { color: <code>rgb(100%,0%,0%)</code>; }</pre>
+<h4>Notice that when using RGB percentages, percentage signs should be written even when the value is zero.<h4>
+<h4>But in other cases you do not need to do that.</h4>
+<h4>For example, px units do not need to be used after 0 when the size is 0 pixels, since 0 is 0, no matter what the unit is.</h4>
+<hr>
+<h3>Remember to Put Quotation Marks</h3>
+<h4>Tip: If the value is a few words, give the value plus quotes:</h4>
+<pre>p {font-family: <code>&quot;sans serif&quot;</code>;}</pre>
+<hr>
+<h3>Multiple statements:</h3>
+<h4>Tip: If you want to define more than one statement, you need to separate each declaration with a semicolon.The following example shows how to define the middle paragraph of a red text.</h4>
+<h4>The last rule does not require a semicolon because the semicolon is a delimiter in English, not an end sign.</h4>
+<h4>However, most experienced designers add a semicolon to the end of each statement, which has the benefit of minimizing the possibility of errors as you add or subtract statements from existing rules.</h4>
+<pre>p {text-align:center<code>;</code> color:red<code>;</code>}	</pre>
+<h4>You should describe only one attribute per line, which enhances the readability of the style definition, like this:</h4>
+<pre>p {
+  text-align: center;
+  color: black;
+  font-family: arial;
+}</pre>
+<hr>
+<h3>Space and Case</h3>
+<h4>Most style sheets contain more than one rule, while most rules contain more than one statement.</h4>
+<h4>The use of multiple declarations and spaces makes it easier to edit style sheets:</h4>
+
+<pre>
+body {
+  color: #000;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Palatino, serif;
+  }</pre>
+<h4>Likewise, unlike XHTML, CSS is not case-sensitive, as it does not affect the CSS's work on browsers.However, there is an exception: 
+The class and id names are case-sensitive if it comes to working with HTML documents.</h4>
+<hr>
+<a href="https://megurokawa.github.io/cssbasic/" target="_blank"><p>CSS Basic Syntax</p></a> 
+
+</div>
+<a href="#top" target="_self">back to the top</a>
+</body>
+</html>
